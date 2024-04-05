@@ -28,7 +28,7 @@
                 <h1 class="text-left font-bold text-3xl text-white">hi tanishqvideo !</h1>
                 <img class="w-[30px] h-[30px] cursor-pointer"src ="assets/settingsmain.svg">
                 </div>
-                <span class="text-left font-light  text-white">let's create something new !</span>
+                <span class="text-left font-thin  text-white">let's create something new !</span>
             </div>
 
             <div id ="columns"class="m-[30px] ml-[40px] grid grid-cols-2 gap-4 items-center justify-center show main" >
@@ -61,13 +61,13 @@
                 </div>
             </div>
 
-            <div id="projectstitle" class="flex  m-[20px] pt-[20px] items-center justify-between relative show main">
+            <div id="projectstitle" class="flex  m-[20px] pt-[10px] items-center justify-between relative show main">
                 <span class=" text-white">projects <span class="font-thin text-xs  text-white">(3)</span></span>
                 <img class="w-[20px] absolute right-7 cursor-pointer" src="assets/search.svg">
                 <img class="w-[20px] h-[20px] cursor-pointer" src="assets/sliders-horizontal.svg">
             </div> 
 
-            <div id="line" class="bg-stone-600 text-start h-[30px] flex items-center relative bottom-2 show main">
+            <div id="line" class="bg-slate-600 text-start h-[30px] flex items-center relative bottom-2 show main">
                 <span class="text-start m-[20px] text-white  opacity-30 ">yesterday</span>
             </div>
 
@@ -106,9 +106,21 @@
             </div>
 
 
-            <div id="navbar"class="w-[380px] h-[50px] ml-[20px] mr-[20px] bg-stone-600  rounded-3xl flex flex-row justify-evenly show bottom-[50px] absolute bottom-[15px]">
-                <img id="homebutton" class = "w-[30px] cursor-pointer" src="assets/home (1).svg">
-                <img class="w-[30px] cursor-pointer" src="assets/circle-plus.svg">
+            <div id="navbar"class="w-[380px] h-[50px] ml-[20px] mr-[20px] bg-slate-600  rounded-3xl flex flex-row justify-evenly show bottom-[40px] absolute bottom-[15px]">
+                <!-- <img id="homebutton" class = "w-[40px] cursor-pointer hover:hidden" src="assets/icons8-home.svg">
+                <img id="homebutton" class = "w-[40px] cursor-pointer hidden" src="assets/icons8-home filled.svg"> -->
+
+                <!-- <img id="homebutton" class="w-[40px] cursor-pointer" src="assets/icons8-home.svg"> -->
+                <!-- <img id="homebutton-hover" class="hidden w-[40px] cursor-pointer" src="assets/icons8-home-filled.svg"> -->
+
+
+                <img id="homebutton" class="w-[40px] cursor-pointer" src="assets/icons8-home.svg"
+                    onmouseover="this.src='assets/icons8-home filled.svg' "
+                    onmouseout="this.src='assets/icons8-home.svg'">
+
+
+                <div class="indicator w-[60px] h-[60px] bg-2A2A32 absolute bottom-4 rounded-full"></div>
+                <img class="w-[40px] cursor-pointer relative bottom-5" src="assets/circle-plus.svg">
                 <img class="w-[30px] cursor-pointer profile" src="assets/user.svg">
                 <img id="userselected" class="w-[30px] cursor-pointer profile hidden" src="assets/user (1).svg">
             </div>
