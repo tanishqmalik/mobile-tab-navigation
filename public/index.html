@@ -3,40 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mobile Tab Navigation</title>
     <link href="styles.css" rel="stylesheet">
 </head>
-<body class="bg-black flex justify-center items-center h-screen">
+<body class="bg-C6DCE5 flex justify-center items-center h-screen w-screen">
 
     <div class="flex justify-center items-center"> 
 
-        <div id="mobiletabnav" class="bg-C6DCE5 w-[420px] h-[836px] text-center rounded-lg">
-            <div id="notifiaction_bar" class="flex flex-row m-[5px] justify-between">
+        <div id="mobiletabnav" class="bg-2A2A32 w-[420px] h-[836px] text-center rounded-3xl">
+            
+            <div id="notifiaction_bar" class="flex flex-row mr-[10px] ml-[10px] mt-[5px] justify-between">
                 <div>
-                    <span>10:54</span>
+                    <span class=" text-white text-[14px]">10:54</span>
                 </div>
-                <div class="flex flex-row pl-[5px] pt-[3px]">
-                    <img class="w-[34px] h-[20px] pr-2" src="assets/lowconnection.png">
-                    <span>50%</span>
-                    <img class = "transform" src="assets/battery1.png">
+                <div class="flex flex-row pl-[5px] pt-[3px] items-center">
+                    <img class="w-[20px] h-[22px] pb-[4px]" src="assets/signalhigh.svg">
+                    <span class=" text-white text-sm pr-1">10%</span>
+                    <img class="h-[24px]" = src="assets/batterylow.svg">
                 </div>
             </div>
 
-
-            <div id="title" class="flex flex-row pt-5 m-[10px] justify-between items-center">
-                <h1 class="text-left font-bold text-3xl">hi! tanishqvideo</h1>
-                <img class="w-[30px] h-[30px] cursor-pointer"src ="assets/settings.png">
+            <div id="title" class="flex flex-col pt-5 m-[20px] ">
+                <div class="flex flex-row justify-between">
+                <h1 class="text-left font-bold text-3xl text-white">hi tanishqvideo !</h1>
+                <img class="w-[30px] h-[30px] cursor-pointer"src ="assets/settingsmain.svg">
+                </div>
+                <span class="text-left font-light  text-white">let's create something new !</span>
             </div>
 
-            <div class="flex flex-col">
-                <div class="flex flex-row items-center">
-                    <span>Projects<span>(3)</span></span>
-                    <img class="w-[20px]"src="assets/search.png">
-                    <img class="w-[20px]"src="assets/filter.png">
+            <div class="m-[30px] ml-[40px] grid grid-cols-2 gap-4 items-center justify-center" >
+                <div class="w-[150px] h-[80px] bg-orange-400 rounded-2xl cursor-pointer">
+                    <div class="flex flex-col w-[30px] items-start m-[15px]">
+                    <img class="w-[40px]" src="assets/camera.svg">
+                    <span class="text-white">camera</span>
+                    </div>
                 </div>
-                <div>
-                    <img class="w-[]" src="assets/line.png"
+
+                <div class="w-[150px] h-[80px] bg-red-400 rounded-2xl cursor-pointer">
+                    <div class="flex flex-col w-[30px] items-start m-[15px]">
+                        <img class="w-[40px]" src="assets/folder.svg">
+                        <span class="text-white">files</span>
+                        </div>
                 </div>
+
+                <div class="w-[150px] h-[80px] bg-yellow-400 rounded-2xl cursor-pointer">
+                    <div class="flex flex-col w-[30px] items-start m-[15px]">
+                        <img class="w-[40px]" src="assets/film.svg">
+                        <span class="text-white">templates</span>
+                        </div>
+                </div>
+
+                <div class="w-[150px] h-[80px] bg-sky-400 rounded-2xl cursor-pointer">
+                    <div class="flex flex-col w-[30px] items-start m-[15px]">
+                        <img class="w-[40px]" src="assets/crown.svg">
+                        <span class="text-white">premium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex  m-[20px] pt-[20px] items-center justify-between relative">
+                <span class=" text-white">projects<span class="font-thin text-xs  text-white">(3)</span></span>
+                <img class="w-[20px] absolute right-7 cursor-pointer" src="assets/search.svg">
+                <img class="w-[20px] h-[20px] cursor-pointer" src="assets/sliders-horizontal.svg">
+            </div> 
+
+            <div id="line" class="bg-stone-600 text-start h-[30px] flex items-center relative bottom-2">
+                <span class="text-start m-[20px] text-white  opacity-30 ">yesterday</span>
+            </div>
+
+
+            <div id="edits" class="m-[20px] flex flex-col items-start gap-11 justify-between">
+
+
+                <div class="flex flex-row gap-3 items-center justify-between relative">
+                    <img class="w-[45px]"src="assets/clapperboard.svg">
+                    <div class="flex flex-col items-start">
+                        <span class="text-white">wedding video</span>
+                        <span class="text-white font-thin text-xs">created on 3rd April, 2024</span>
+                    </div>
+                    <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
+                </div>
+    
+
+                <div class="flex flex-row gap-3 items-center relative">
+                    <img class="w-[45px]"src="assets/clapperboard.svg">
+                    <div class="flex flex-col items-start">
+                        <span class="text-white">farewell video</span>
+                        <span class="text-white font-thin text-xs">created on 3rd April, 2024</span>
+                    </div>
+                    <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
+                </div>
+
+
+                <div class="flex flex-row gap-3 items-center relative">
+                    <img class="w-[45px]"src="assets/clapperboard.svg">
+                    <div class="flex flex-col items-start">
+                        <span class="text-white">untitled</span>
+                        <span class="text-white font-thin text-xs">created on 3rd April, 2024</span>
+                    </div>
+                    <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
+                </div>
+
+
             </div>
 
 
