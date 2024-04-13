@@ -39,6 +39,21 @@ profilebutton.addEventListener('click',(e)=>{
 
 });
 
+profilebutton.addEventListener('click', () => loadContent('profile.html'));
+const profile_page= document.getElementById('okayyy')
+
+function loadContent(file) {
+    fetch(file)
+      .then(response => response.text())
+      .then(html => {
+        profile_page.innerHTML = html;
+      })
+      .catch(error => {
+        console.error('Error loading content:', error);
+      });
+}
+
+
 hb_ns.addEventListener('click', ()=>{
     showElements();
     userselected.classList.add('hidden')
