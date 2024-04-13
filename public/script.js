@@ -1,3 +1,4 @@
+  
 const homebutton=document.querySelector('.homebutton')
 const main=document.querySelectorAll('.main')
 const userselected= document.getElementById('userselected')
@@ -19,6 +20,10 @@ homebutton.addEventListener('click', (e) => {
     showElements();
 });
 
+
+const profile_content=document.getElementById('profile_content')
+const home_content=document.getElementById('home_content')
+
 profilebutton.addEventListener('click',(e)=>{
     e.preventDefault();
     document.getElementById('userselected').classList.remove('hidden')
@@ -37,21 +42,12 @@ profilebutton.addEventListener('click',(e)=>{
 
     indicator_id.style.left= '2.4px'
 
+
+    profile_content.classList.remove('hidden')
+    home_content.classList.add('hidden')
 });
 
-profilebutton.addEventListener('click', () => loadContent('profile.html'));
-const profile_page= document.getElementById('okayyy')
 
-function loadContent(file) {
-    fetch(file)
-      .then(response => response.text())
-      .then(html => {
-        profile_page.innerHTML = html;
-      })
-      .catch(error => {
-        console.error('Error loading content:', error);
-      });
-}
 
 
 hb_ns.addEventListener('click', ()=>{
@@ -65,4 +61,16 @@ hb_ns.addEventListener('click', ()=>{
     pb_span.style.opacity='0.75'
     pb_span.style.fontWeight='300'
     indicator_id.style.left= '0.5px'
+
+
+    profile_content.classList.add('hidden')
+    home_content.classList.remove('hidden')
 });
+
+
+
+
+
+
+// scrolling try
+
