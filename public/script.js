@@ -45,6 +45,10 @@ profilebutton.addEventListener('click',(e)=>{
 
     profile_content.classList.remove('hidden')
     home_content.classList.add('hidden')
+
+    profile_content.classList.remove('opacity-0');
+    profile_content.classList.add('opacity-100');
+
 });
 
 
@@ -67,6 +71,14 @@ hb_ns.addEventListener('click', ()=>{
     home_content.classList.remove('hidden')
 });
 
+
+// const toggleButton = document.getElementById('toggleButton');
+// const content = document.getElementById('content');
+
+// toggleButton.addEventListener('click', (e) => {
+//   content.classList.remove('opacity-0');
+//   content.classList.add('opacity-100');
+// });
 
 
 
