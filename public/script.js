@@ -7,6 +7,8 @@ const hb_ns=document.getElementById("homebutton_ns");
 const hb_span=document.getElementById('home_span');
 const pb_span=document.getElementById('profile_span');
 const indicator_id = document.getElementById('indicator_id');
+const navbar = document.getElementById('navbar');
+const indicator_content= document.getElementById('indicator_content')
 
 const hideElements = ()=>{
     main.forEach((Elements)=>Elements.classList.add("hidden"))
@@ -92,6 +94,15 @@ hb_ns.addEventListener('click', ()=>{
     // home_content.classList.remove('opacity-0')
     // home_content.classList.add('opacity-1')
 });
+
+
+indicator_id.addEventListener('click',()=>{
+    home_content.classList.add('hidden');
+    profile_content.classList.add('hidden')
+    navbar.classList.add('hidden')
+    indicator_content.classList.remove('hidden')
+    // indicator_content.classList.add('animate-sildeInFromBottom')
+})
 
 
 // const toggleButton = document.getElementById('toggleButton');
