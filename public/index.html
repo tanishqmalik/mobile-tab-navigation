@@ -25,7 +25,9 @@
 
 
 
-            <div id="profile_content" class="pt-5 m-[20px] hidden relative transition-opacity duration-1000 ease-in-out opacity-0">
+            <div id="profile_content" class="pt-5 m-[20px] relative hidden transition-opacity duration-1000 ease-in-out opacity-0">
+
+
 
                 <div class="flex flex-row items-center">
                     <div class="flex items-center">
@@ -43,13 +45,49 @@
                     <span>4 <span class="opacity-75">Following</span></span>
                     <span>10 <span class="opacity-75">Followers</span></span>
                 </div>
+
+
+                <div class="bg-303135 mt-3 h-2 w-[420px] relative right-5"></div>
+
+                <div class="flex flex-col items-start gap-11 ">
+                    <div class="flex flex-row items-center relative mt-5 cursor-pointer">
+                        <img src="assets/bolt_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-white text-[15px] opacity-85 pl-2">BeatsClips</span>
+                        <img class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                    </div>
+
+                    <div  class="flex flex-row items-center relative mt-2 cursor-pointer">
+                        <img src="assets/animated_images_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-white text-[15px] opacity-85 pl-2">Vlogs</span>
+                        <img class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                    </div>
+
+                    <div class="flex flex-row items-center relative mt-2 mb-3 cursor-pointer">
+                        <img src="assets/favorite_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-white text-[15px] opacity-85 pl-2" >Likes</span>
+                        <img  class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                    </div>
+                </div>
+
+                <div class="bg-303135 mt-3 h-2 w-[420px] relative right-5"></div>
+
+
+                <div class="mt-6 flex flex-row items-start relative cursor-pointer">
+                    <img src="assets/delete_FILL0_wght400_GRAD0_opsz24.svg">
+                    <span class="text-white text-[15px] opacity-85 pl-2">Project Trash</span>
+                    <span class="text-white text-[10px] absolute left-[340px] opacity-85 pl-2 bottom-1">0</span>
+                    <img  class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                </div>
+
+                <!-- <div class="bg-303135 mt-6 h-2 w-[420px] relative right-5"></div> -->
+
+
+
             </div>
 
 
-            
 
-
-            <div id="home_content" class="overflow-auto w-[420px] h-[795px] tab-pane">
+            <div id="home_content" class="overflow-auto w-[420px] h-[795px] tab-pane  transition-opacity duration-1000 ease-in-out" style="opacity: 1">
 
 
             <div id="title1st" class="flex flex-col pt-5 m-[20px] show main">
@@ -59,18 +97,6 @@
                 </div>
                 <span class="text-left font-thin  text-white">let's create something new !</span>
             </div>
-
-
-            <!-- <button id="toggleButton" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Toggle Content
-              </button>
-              
-              <div id="content" class="transition-opacity duration-1000 ease-in-out opacity-0">
-                <p>This is the content that will gradually appear when the button is clicked.</p>
-              </div> -->
-
-
-
 
 
             <div id ="columns"class="m-[30px] ml-[40px] grid grid-cols-2 gap-4 items-center justify-center show main" >
@@ -114,10 +140,10 @@
             </div>
 
 
-            <div id="edits" class="m-[20px] flex flex-col items-start gap-11 justify-between show main">
+            <div id="edits" class="m-[20px] flex flex-col items-start gap-11 justify-between show main ">
 
 
-                <div class="flex flex-row gap-3 items-center justify-between relative">
+                <div class="flex flex-row gap-3 items-center justify-between relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">wedding video</span>
@@ -127,7 +153,7 @@
                 </div>
     
 
-                <div class="flex flex-row gap-3 items-center relative">
+                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">farewell video</span>
@@ -141,7 +167,7 @@
                 </div> -->
 
 
-                <div class="flex flex-row gap-3 items-center relative">
+                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">untitled</span>
@@ -151,7 +177,7 @@
                 </div>
 
 
-                <div class="flex flex-row gap-3 items-center relative">
+                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">untitled</span>
@@ -160,7 +186,7 @@
                     <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
                 </div>
 
-                <div class="flex flex-row gap-3 items-center relative">
+                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">untitled</span>
@@ -169,7 +195,7 @@
                     <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
                 </div>
 
-                <div class="flex flex-row gap-3 items-center relative">
+                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">untitled</span>
@@ -216,7 +242,7 @@
 
                 <div class="flex flex-col items-center cursor-pointer">   
                     <img id="user" class="w-[37px] cursor-pointer opacity-75 tab-btn" src="assets/person_FILL0_wght400_GRAD0_opsz24.svg">
-                <img id="userselected" class="w-[37px] cursor-pointer profile hidden" src="assets/person_FILL1_wght400_GRAD0_opsz24.svg">
+                <img id="userselected"  class="w-[37px] cursor-pointer profile hidden" src="assets/person_FILL1_wght400_GRAD0_opsz24.svg">
                 <span id = "profile_span" class="text-white font-light opacity-75">Profile</span>
                 <div>
 

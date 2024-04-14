@@ -43,13 +43,23 @@ profilebutton.addEventListener('click',(e)=>{
     indicator_id.style.left= '2.4px'
 
 
-    profile_content.classList.remove('hidden')
     home_content.classList.add('hidden')
+    home_content.classList.toggle('opacity-0')
 
-    profile_content.classList.remove('opacity-0');
-    profile_content.classList.add('opacity-100');
+
+
+
+    if(profile_content.classList.contains('hidden')){
+        profile_content.classList.toggle('hidden');
+
+        setTimeout(()=>{
+            profile_content.style.opacity='1'
+            home_content.style.opacity='0'
+        },1)
+    }
 
 });
+
 
 
 
@@ -68,7 +78,19 @@ hb_ns.addEventListener('click', ()=>{
 
 
     profile_content.classList.add('hidden')
-    home_content.classList.remove('hidden')
+
+
+    if(home_content.classList.contains('hidden')){
+        home_content.classList.remove('hidden');
+
+        setTimeout(()=>{
+            home_content.style.opacity = '1';
+            profile_content.style.opacity = '0';
+        },1)
+    }
+
+    // home_content.classList.remove('opacity-0')
+    // home_content.classList.add('opacity-1')
 });
 
 
@@ -78,6 +100,7 @@ hb_ns.addEventListener('click', ()=>{
 // toggleButton.addEventListener('click', (e) => {
 //   content.classList.remove('opacity-0');
 //   content.classList.add('opacity-100');
+//   console.log(content)
 // });
 
 
