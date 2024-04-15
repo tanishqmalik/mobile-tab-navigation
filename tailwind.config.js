@@ -13,13 +13,28 @@ module.exports = {
       },
       animation: {
         slideInFromBottom: 'slideInFromBottom 0.3s ease-in-out',
+        slideInFromTop: 'slideInFromTop 0.3s ease-in-out',
       },
+      // animation:{
+      //   slideInFromTop: 'slideInFromTop 0.5s ease-in-out'
+      // },
 
       // that is actual animation
       keyframes: {
         slideInFromBottom: {
           '0%': {
             transform: 'translateY(100%)',
+            opacity: 0,
+          },
+          '100%': {
+            transform: 'translateY(0)',
+            opacity: 1,
+          },
+        },
+
+        slideInFromTop: {
+          '0%': {
+            transform: 'translateY(-100%)',
             opacity: 0,
           },
           '100%': {

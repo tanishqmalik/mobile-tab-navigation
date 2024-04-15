@@ -9,6 +9,7 @@ const pb_span=document.getElementById('profile_span');
 const indicator_id = document.getElementById('indicator_id');
 const navbar = document.getElementById('navbar');
 const indicator_content= document.getElementById('indicator_content')
+const indicator_back = document.getElementById('indicator_back')
 
 const hideElements = ()=>{
     main.forEach((Elements)=>Elements.classList.add("hidden"))
@@ -103,6 +104,14 @@ indicator_id.addEventListener('click',()=>{
     indicator_content.classList.remove('hidden')
     // indicator_content.classList.add('animate-sildeInFromBottom')
 })
+
+indicator_back.addEventListener('click',()=>{
+    location.reload();
+})
+
+
+
+
 
 
 // const toggleButton = document.getElementById('toggleButton');
