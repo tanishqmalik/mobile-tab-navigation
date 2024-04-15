@@ -24,10 +24,10 @@
             </div>
 
 
-            <div id="indicator_content" class="hidden pt-5 m-[20px] animate-slideInFromBottom">
-                <div class="flex flex-row items-center justify-between">
-                    <img id="indicator_back" class="w-8 cursor-pointer "src="assets/chevron_left_FILL0_wght400_GRAD0_opsz24.svg">
-                    <div class="flex items-center gap-1">
+            <div id="indicator_content" class="hidden pt-4 m-[20px] animate-slideInFromBottom">
+                <div class="flex flex-row items-center justify-between relative">
+                    <img id="indicator_back" class="w-8 cursor-pointer" src="assets/chevron_left_FILL0_wght400_GRAD0_opsz24.svg">
+                    <div class="flex items-center gap-1 absolute left-[153px]">
                         <img class="cursor-pointer" src="assets/capture_FILL0_wght400_GRAD0_opsz24.svg">
                         <span class="text-white text-xs">Original</span>
                     </div>
@@ -47,7 +47,7 @@
                 
 
                 <div class="text-white text-xs flex flex-row items-center pt-2 relative">
-                    <span>0.00s <span class="opacity-75">/ 6.00s</span></span>
+                    <span>0.00s <span class="opacity-75">/ 0.00s</span></span>
                     <div class="flex flex-row items-center absolute left-[147px] gap-3 cursor-pointer">
                         <img class="w-[19px] opacity-75" src="assets/skip_previous_FILL1_wght400_GRAD0_opsz24.svg">
                         <img src="assets/play_arrow_FILL1_wght400_GRAD0_opsz24.svg">
@@ -55,10 +55,83 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col">
-                    <div class="flex flex-row">
-                        
+
+                <div class="h-[263px] bg-white w-[2px] absolute bottom-[109px] left-[206px]"></div>
+
+
+                <div class="flex flex-col pt-5 relative gap-4">
+                    <div class="flex flex-row items-center relative left-36">
+                        <img src="assets/music.svg">
+                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                            <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add music</span>
+                        </div>
                     </div>
+
+                    <div class="flex flex-row items-center relative left-36">
+                        <img src="assets/type.svg">
+                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                            <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add subtitle</span>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row items-center relative left-36">
+                        <img src="assets/sticker.svg">
+                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                            <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add sticker / PiP</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-row items-center relative left-36">
+                        <img src="assets/film (1).svg">
+                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                            <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add media</span>
+                        </div>
+                    </div>
+
+
+                    <div class="flex flex-row items-center relative left-36">
+                        <img src="assets/volume-2.svg">
+                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                            <span class="text-white text-xs text-center opacity-75 absolute left-2">Volume</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="flex flex-row mt-9 gap-7 justify-evenly">
+                    <div class="flex flex-col cursor-pointer">
+                        <img class="w-8 opacity-90" src="assets/filter_vintage_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-xs text-white opacity-75">Filter</span>
+                    </div>
+
+                    <div class="flex flex-col cursor-pointer">
+                        <img class="w-8 opacity-90" src="assets/content_cut_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-xs text-white opacity-75">Trim</span>
+                    </div>
+
+                    <div class="flex flex-col cursor-pointer">
+                        <img class="w-8 opacity-90" src="assets/star_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-xs text-white opacity-75">FX</span>
+                    </div>
+
+
+                    <div class="flex flex-col cursor-pointer">
+                        <img class="w-8 opacity-90" src="assets/crop_rotate_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-xs text-white opacity-75">Crop</span>
+                    </div>
+
+                    <div class="flex flex-col cursor-pointer">
+                        <img class="w-8 opacity-90" src="assets/lens_blur_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-xs text-white opacity-75">Blur</span>
+                    </div>
+
+                    <div class="flex flex-col cursor-pointer items-center">
+                        <img class="w-8 opacity-90" src="assets/zoom_out_map_FILL0_wght400_GRAD0_opsz24.svg">
+                        <span class="text-xs text-white opacity-75">Zoom</span>
+                    </div>
+
                 </div>
 
 
@@ -245,6 +318,8 @@
                     <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
                 </div>
 
+                <div class="w-[202px] h-[42px]"></div>
+
             </div>
 
             </div>
@@ -302,7 +377,11 @@
 
     <!-- onmouseover effect -->
     <!-- cursor-pointer -->
-    <!-- scrolling untitled edit to box  -->
+    <!-- scrolling untitled edit add one more date   -->
+    <!-- indicator icons opacity -->
+    <!-- profile content add one more function before Beatsclips -->
+
+
     
 </body>
 </html>
