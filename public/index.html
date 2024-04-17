@@ -11,15 +11,17 @@
 
     <div class="flex justify-center items-center"> 
 
-        <div id="mobiletabnav" class="bg-202125 w-[420px] h-[836px] text-center rounded-3xl relative">
+        <div id="mobiletabnav" class="bg-202125 w-[420px] h-[836px] text-center rounded-3xl relative border-2 border-solid border-202125">
             <div id="notifiaction_bar" class="flex flex-row mr-[10px] ml-[10px] mt-[5px] justify-between">
                 <div>
                     <span class=" text-white text-[14px]">10:54</span>
                 </div>
                 <div class="flex flex-row pl-[5px] pt-[3px] items-center">
-                    <img class="w-[20px] h-[22px] pb-[4px]" src="assets/signalhigh.svg">
+                    <img id ="signalhigh_white"class="w-[20px] h-[22px] pb-[4px]" src="assets/signalhigh.svg">
+                    <img id="signalhigh_black" class="w-[20px] h-[22px] pb-[4px] hidden" src="assets/signalhigh1.svg">
                     <span class=" text-white text-sm pr-1">10%</span>
-                    <img class="h-[24px]" = src="assets/batterylow.svg">
+                    <img id="batterylow_white" class="h-[24px]"  src="assets/batterylow.svg">
+                    <img id="batterylow_black" class="h-[24px] hidden"  src="assets/batterylow2.svg">
                 </div>
             </div>
 
@@ -37,12 +39,12 @@
                 <div class="pt-2">
                 <div class="bg-white w-[380px] h-[300px] flex items-center justify-center flex-col">
                     <img class="w-10 cursor-pointer" src="assets/add_photo_alternate_FILL0_wght400_GRAD0_opsz24.svg">
-                    <span class="opacity-65">Click here to select items from files</span>
+                    <span1 class="opacity-65">Click here to select items from files</span1>
                 </div>
                 </div>
 
 
-                <div class="bg-303135 mt-2 h-1 w-[420px] relative right-5"></div>
+                <div class="bg-303135 mt-2 h-1 w-[418px] relative right-5"></div>
 
                 
 
@@ -62,21 +64,21 @@
                 <div class="flex flex-col pt-5 relative gap-4">
                     <div class="flex flex-row items-center relative left-36">
                         <img src="assets/music.svg">
-                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add music</span>
                         </div>
                     </div>
 
                     <div class="flex flex-row items-center relative left-36">
                         <img src="assets/type.svg">
-                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add subtitle</span>
                         </div>
                     </div>
 
                     <div class="flex flex-row items-center relative left-36">
                         <img src="assets/sticker.svg">
-                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add sticker / PiP</span>
                         </div>
                     </div>
@@ -84,7 +86,7 @@
 
                     <div class="flex flex-row items-center relative left-36">
                         <img src="assets/film (1).svg">
-                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add media</span>
                         </div>
                     </div>
@@ -92,7 +94,7 @@
 
                     <div class="flex flex-row items-center relative left-36">
                         <img src="assets/volume-2.svg">
-                        <div class="bg-303135 h-10 w-[211px] relative flex items-center left-6">
+                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2">Volume</span>
                         </div>
                     </div>
@@ -161,7 +163,7 @@
                 </div>
 
 
-                <div class="bg-303135 mt-3 h-2 w-[420px] relative right-5"></div>
+                <div class="bg-303135 mt-3 h-2 w-[418px] relative right-5"></div>
 
                 <div class="flex flex-col items-start gap-11 ">
                     <div class="flex flex-row items-center relative mt-5 cursor-pointer">
@@ -183,7 +185,7 @@
                     </div>
                 </div>
 
-                <div class="bg-303135 mt-3 h-2 w-[420px] relative right-5"></div>
+                <div class="bg-303135 mt-3 h-2 w-[418px] relative right-5"></div>
 
 
                 <div class="mt-6 flex flex-row items-start relative cursor-pointer">
@@ -205,9 +207,15 @@
 
 
             <div id="title1st" class="flex flex-col pt-5 m-[20px] show main">
-                <div class="flex flex-row justify-between">
-                <h1 class="text-left font-bold text-3xl text-white">Hi Tanishq !</h1>
-                <img class="w-[30px] h-[30px] cursor-pointer"src ="assets/settingsmain.svg">
+                <div class="flex flex-row justify-between items-center">
+                    <h1 class="text-left font-bold text-3xl text-white">Hi Tanishq !</h1>
+                    <!-- <img class="w-[30px] h-[30px] cursor-pointer"src ="assets/settingsmain.svg"> -->
+                    <label for="check" class=" bg-gray-100 cursor-pointer relative
+                    w-10 h-5 rounded-full">
+                        <input type="checkbox" id="check" class="sr-only peer">
+                        <span class="w-2/5 h-4/5 bg-rose-300 absolute rounded-full left-1 top-[2px] peer-checked:bg-rose-600 peer-checked:left-5
+                        transition-all duration-500"></span>
+                    </label>
                 </div>
                 <span class="text-left font-thin  text-white">let's create something new !</span>
             </div>
@@ -245,29 +253,34 @@
 
             <div id="projectstitle" class="flex  m-[20px] pt-[10px] items-center justify-between relative show main">
                 <span class=" text-white">Projects <span class="font-thin text-xs  text-white">(3)</span></span>
-                <img class="w-[20px] absolute right-7 cursor-pointer" src="assets/search.svg">
-                <img class="w-[20px] h-[20px] cursor-pointer" src="assets/sliders-horizontal.svg">
-            </div> 
+                <img id="search_white" class="w-[20px] absolute right-7 cursor-pointer" src="assets/search.svg">
+                <img id="search_black" class="w-[20px] absolute right-7 cursor-pointer hidden" src="assets/search1.svg">
+                <img id="sliders_horizontal_white" class="w-[20px] h-[20px] cursor-pointer" src="assets/sliders-horizontal.svg">
+                <img id="sliders_horizontal_black" class="w-[20px] h-[20px] cursor-pointer hidden" src="assets/sliders-horizontal1.svg">
+            </div>
 
-            <div id="line" class="bg-303135 text-start h-[30px] flex items-center relative bottom-2 show main">
+            <div id="line" class="bg-303135 text-start h-[30px] flex items-center relative bottom-2 show main mt-2 w-[416px]">
                 <span class="text-start m-[20px] text-white  opacity-30 ">Yesterday</span>
             </div>
+
+            <!-- <div class="bg-303135 mt-2 h-1 w-[420px] relative right-5"></div> -->
 
 
             <div id="edits" class="m-[20px] flex flex-col items-start gap-11 justify-between show main ">
 
 
-                <div class="flex flex-row gap-3 items-center justify-between relative cursor-pointer">
+                <div  class="flex flex-row gap-3 items-center justify-between relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">wedding video</span>
                         <span class="text-white font-thin text-xs">Created on 3rd April, 2024</span>
                     </div>
-                    <img class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
+                    <img id="ellipsis_white" class="absolute left-[350px] cursor-pointer" src="assets/ellipsis.svg">
+                    <img id="ellipsis_black" class="absolute left-[350px] cursor-pointer hidden" src="assets/ellipsis1.svg">
                 </div>
     
 
-                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
+                <div id="edit2" class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">farewell video</span>
@@ -281,7 +294,7 @@
                 </div> -->
 
 
-                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
+                <div id="edit3" class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">untitled</span>
@@ -291,7 +304,7 @@
                 </div>
 
 
-                <div class="flex flex-row gap-3 items-center relative cursor-pointer">
+                <div id="edit4" class="flex flex-row gap-3 items-center relative cursor-pointer">
                     <img class="w-[45px]"src="assets/clapperboard.svg">
                     <div class="flex flex-col items-start">
                         <span class="text-white">untitled</span>
@@ -353,7 +366,7 @@
                 <span id="home_span" class="font-medium text-white">Home</span>
                 </div>
 
-                <div class="indicator w-[60px] h-[60px] bg-202125 absolute bottom-[30px] rounded-full"></div>
+                <div id="indicator_helper" class="indicator w-[60px] h-[60px] bg-202125 absolute bottom-[30px] rounded-full"></div>
                 <img id="indicator_id" class="w-[50px] cursor-pointer relative bottom-6 left-[0.5px]" src="assets/circle-plus.svg">
 
                 <div class="flex flex-col items-center cursor-pointer">   
