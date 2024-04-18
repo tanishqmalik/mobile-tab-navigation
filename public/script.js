@@ -30,9 +30,18 @@ const sliders_horizontal_white = document.getElementById('sliders_horizontal_whi
 const ellipsis_white = document.getElementById('ellipsis_white')
 const ellipsis_black = document.getElementById('ellipsis_black')
 
-const clapperboard_white = document.querySelectorAll('#clapperboard_white');
-const clapperboard_black = document.querySelectorAll('#clapperboard1')
+const clapperboard_black = document.querySelectorAll('#clapperboard1');
+
+// clapperboard_white.forEach(function(element){
+//     element.classList.add('hidden')
+// })
+
+
 console.log(clapperboard_white);
+
+// const clapperboard_white = document.querySelectorAll('#clapperboard_white');
+// console.log(clapperboard_white);
+// console.log(clapperboard_black);
 
 const image = document.createElement('img');
 image.src = 'assets/ellipsis1.svg'; 
@@ -70,6 +79,9 @@ const container5 = document.getElementById('edit6');
 // clapper.src=
 
 // container.appendChild(image);
+
+
+
 
 
 
@@ -211,6 +223,16 @@ const mobiletabnav= document.getElementById('mobiletabnav')
 // })
 
 // const spans = Array.from(document.querySelectorAll('span'))
+
+
+
+
+
+const clapperboard_black_remove= ()=>{
+    main.forEach((Elements)=>Elements.classList.remove('hidden'))
+}
+
+
 const spans= document.querySelectorAll('span')
 const h1_tags = document.querySelectorAll('h1');
 
@@ -259,6 +281,7 @@ function changeContent(){
         container3.appendChild(image3);
         container4.appendChild(image4);
         container5.appendChild(image5);
+        // clapperboard_white.classList.add('hidden')
 
 
 
