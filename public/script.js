@@ -30,20 +30,46 @@ const sliders_horizontal_white = document.getElementById('sliders_horizontal_whi
 const ellipsis_white = document.getElementById('ellipsis_white')
 const ellipsis_black = document.getElementById('ellipsis_black')
 
-
-
+const clapperboard_white = document.querySelectorAll('#clapperboard_white');
+const clapperboard_black = document.querySelectorAll('#clapperboard1')
+console.log(clapperboard_white);
 
 const image = document.createElement('img');
-
-
 image.src = 'assets/ellipsis1.svg'; 
 image.id = 'ellipsis_black';
-image.className = 'absolute left-[350px] cursor-pointer hidden';
+image.className = 'absolute left-[350px] cursor-pointer';
+
+
+const image2 = document.createElement('img');
+image2.src = 'assets/ellipsis1.svg'; 
+image2.id = 'ellipsis_black';
+image2.className = 'absolute left-[350px] cursor-pointer';
+
+const image3 = document.createElement('img');
+image3.src = 'assets/ellipsis1.svg'; 
+image3.id = 'ellipsis_black';
+image3.className = 'absolute left-[350px] cursor-pointer';
+
+
+const image4 = document.createElement('img');
+image4.src = 'assets/ellipsis1.svg'; 
+image4.id = 'ellipsis_black';
+image4.className = 'absolute left-[350px] cursor-pointer';
+
+const image5 = document.createElement('img');
+image5.src = 'assets/ellipsis1.svg'; 
+image5.id = 'ellipsis_black';
+image5.className = 'absolute left-[350px] cursor-pointer';
 
 const container = document.getElementById('edit2');
+const container2 = document.getElementById('edit3');
+const container3 = document.getElementById('edit4');
+const container4 = document.getElementById('edit5');
+const container5 = document.getElementById('edit6');
 
+// clapper.src=
 
-container.appendChild(image);
+// container.appendChild(image);
 
 
 
@@ -226,8 +252,18 @@ function changeContent(){
         ellipsis_black.classList.remove('hidden')
         ellipsis_white.classList.add('hidden')
 
+
+
+        container.appendChild(image);
+        container2.appendChild(image2);
+        container3.appendChild(image3);
+        container4.appendChild(image4);
+        container5.appendChild(image5);
+
+
+
         
-        console.log(container)
+        // console.log(container)
 
 
     }
@@ -266,6 +302,14 @@ function changeContent(){
 
         ellipsis_black.classList.add('hidden')
         ellipsis_white.classList.remove('hidden')
+
+
+        container.removeChild(image);
+        container2.removeChild(image2);
+        container3.removeChild(image3);
+        container4.removeChild(image4);
+        container5.removeChild(image5);
+
 
 
     }
