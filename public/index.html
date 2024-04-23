@@ -7,7 +7,7 @@
     <link href="styles.css" rel="stylesheet">
     <a  href="https://icons8.com/icon/zxB19VPoVLjK/user"></a>
 </head>
-<body class="bg-white flex justify-center items-center h-screen w-screen">
+<body id="bodyy" class="bg-white flex justify-center items-center h-screen w-screen">
 
     <div class="flex justify-center items-center"> 
 
@@ -153,7 +153,8 @@
                             <span class="text-white opacity-75 text-sm">@tanishqvideo</span>
                         </div>
                     </div>
-                    <img src="assets/settingsmain.svg" class="w-[30px] h-[30px] cursor-pointer absolute right-0 ">
+                    <img id="settings_image" src="assets/settingsmain.svg" class="w-[30px] h-[30px] cursor-pointer absolute right-0 ">
+                    <img id="settings_image1" src="assets/settingsmain1.svg" class="w-[30px] h-[30px] cursor-pointer absolute hidden right-0 ">
                 </div>
 
 
@@ -163,29 +164,29 @@
                 </div>
 
 
-                <div class="bg-303135 mt-3 h-2 w-[418px] relative right-5"></div>
+                <div id="profile_line" class="bg-303135 mt-3 h-2 w-[416px] relative right-5"></div>
 
                 <div class="flex flex-col items-start gap-11 ">
                     <div class="flex flex-row items-center relative mt-5 cursor-pointer">
                         <img src="assets/bolt_FILL0_wght400_GRAD0_opsz24.svg">
                         <span class="text-white text-[15px] opacity-85 pl-2">BeatsClips</span>
-                        <img class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="profile_r" class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
                     </div>
 
                     <div  class="flex flex-row items-center relative mt-2 cursor-pointer">
                         <img src="assets/animated_images_FILL0_wght400_GRAD0_opsz24.svg">
                         <span class="text-white text-[15px] opacity-85 pl-2">Vlogs</span>
-                        <img class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="profile_r" class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
                     </div>
 
                     <div class="flex flex-row items-center relative mt-2 mb-3 cursor-pointer">
                         <img src="assets/favorite_FILL0_wght400_GRAD0_opsz24.svg">
                         <span class="text-white text-[15px] opacity-85 pl-2" >Likes</span>
-                        <img  class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="profile_r" class="absolute left-[354px]" src="assets/chevron_right_FILL0_wght400_GRAD0_opsz24.svg">
                     </div>
                 </div>
 
-                <div class="bg-303135 mt-3 h-2 w-[418px] relative right-5"></div>
+                <div id="profile_line" class="bg-303135 mt-3 h-2 w-[416px] relative right-5"></div>
 
 
                 <div class="mt-6 flex flex-row items-start relative cursor-pointer">
@@ -364,8 +365,10 @@
 
 
                 <img id="homebutton" class="w-[35px] cursor-pointer homebutton tab-btn" src="assets/home_FILL1_wght400_GRAD0_opsz24.svg">
+                <img id="homebutton_black" class="w-[35px] cursor-pointer homebutton tab-btn hidden" src="assets/homebutton_black.svg">
                 <!-- <div class="indicator w-[60px] h-[20px]  bg-2A2A32"> </div> -->
                 <img id="homebutton_ns" class="w-[35px] cursor-pointer hidden" src="assets/home_FILL0_wght400_GRAD0_opsz24.svg">
+                <img id="homebutton_ns_black" class="w-[35px] cursor-pointer hidden" src="assets/homebutton_ns_black.svg" >
                     <!-- onmouseover="this.src='assets/home_FILL1_wght400_GRAD0_opsz24.svg' "
                     onmouseout="this.src='assets/home_FILL0_wght400_GRAD0_opsz24.svg'"> -->
 
@@ -374,11 +377,19 @@
 
                 <div id="indicator_helper" class="indicator w-[60px] h-[60px] bg-202125 absolute bottom-[30px] rounded-full"></div>
                 <img id="indicator_id" class="w-[50px] cursor-pointer relative bottom-6 left-[0.5px]" src="assets/circle-plus.svg">
+                <img id="indicator_id_black" class="w-[50px] cursor-pointer relative bottom-6 left-[0.5px] hidden" src="assets/circle-plus1.svg">
 
                 <div class="flex flex-col items-center cursor-pointer">   
                     <img id="user" class="w-[37px] cursor-pointer opacity-75 tab-btn" src="assets/person_FILL0_wght400_GRAD0_opsz24.svg">
-                <img id="userselected"  class="w-[37px] cursor-pointer profile hidden" src="assets/person_FILL1_wght400_GRAD0_opsz24.svg">
-                <span id = "profile_span" class="text-white font-light opacity-75">Profile</span>
+                    <img id="user_ns_black" class="w-[37px] cursor-pointer opacity-75 tab-btn hidden" src="assets/pb_ns_black.svg">
+                    
+
+
+                    <img id="userselected"  class="w-[37px] cursor-pointer profile hidden" src="assets/person_FILL1_wght400_GRAD0_opsz24.svg">
+                    <img id="userselected_black" class="w-[37px] cursor-pointer profile hidden" src="assets/pb_black.svg">
+
+
+                    <span id = "profile_span" class="text-white font-light opacity-75">Profile</span>
                 <div>
 
                 

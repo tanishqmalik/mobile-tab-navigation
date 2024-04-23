@@ -13,6 +13,7 @@ const indicator_helper = document.getElementById('indicator_helper');
 
 
 
+
 // navbar icons
 const signalhigh_white = document.getElementById('signalhigh_white')
 const signalhigh_black = document.getElementById('signalhigh_black')
@@ -31,13 +32,38 @@ const ellipsis_white = document.getElementById('ellipsis_white')
 const ellipsis_black = document.getElementById('ellipsis_black')
 
 const clapperboard_black = document.querySelectorAll('#clapperboard1');
+const clapperboard_white = document.querySelectorAll('#clapperboard_white');
+
+
+const indicator_main_black = document.getElementById('indicator_id_black')
+const indicator_main = document.getElementById('indicator_id')
+
+
+const homebutton_black = document.getElementById('homebutton_black')
+const homebutton_ns_black = document.getElementById('homebutton_ns_black')
+
+
+const pb_ns_black = document.getElementById('user_ns_black')
+const pb_black = document.getElementById('userselected_black')
+
+
+const body = document.getElementById('bodyy')
+
+
+const profile_lines = document.querySelectorAll('#profile_line')
+
+
+const settings_image = document.getElementById('settings_image')
+const settings_image_black = document.getElementById('settings_image1')
+
+
+const profile_r = document.querySelectorAll('#profile_r');
+
 
 // clapperboard_white.forEach(function(element){
 //     element.classList.add('hidden')
 // })
 
-
-console.log(clapperboard_white);
 
 // const clapperboard_white = document.querySelectorAll('#clapperboard_white');
 // console.log(clapperboard_white);
@@ -281,10 +307,45 @@ function changeContent(){
         container3.appendChild(image3);
         container4.appendChild(image4);
         container5.appendChild(image5);
-        // clapperboard_white.classList.add('hidden')
+        
+        clapperboard_white.forEach(function(element){
+            element.classList.add('hidden')
+        })
+
+        clapperboard_black.forEach(function(element){
+            element.classList.remove('hidden')
+        })
+
+        indicator_main_black.classList.remove('hidden')
+        indicator_main.classList.add('hidden')
+
+
+        homebutton_black.classList.remove('hidden')
+        homebutton.classList.add('hidden')
+
+
+        pb_ns_black.classList.remove('hidden')
+        profilebutton.classList.add('hidden')
+
+
+        body.classList.add('bg-202125')
+        body.classList.remove('bg-white')
 
 
 
+        profile_lines.forEach(function(element){
+            element.style.backgroundColor='#E7E7E7'
+        })
+
+
+        settings_image.classList.add('hidden')
+        settings_image_black.classList.remove('hidden')
+
+
+        // profile_r.forEach(function(element){
+        //     element.
+        // })
+        
         
         // console.log(container)
 
@@ -335,7 +396,163 @@ function changeContent(){
 
 
 
+        clapperboard_white.forEach(function(element){
+            element.classList.remove('hidden')
+        })
+
+        clapperboard_black.forEach(function(element){
+            element.classList.add('hidden')
+        })
+
+
+        indicator_main_black.classList.add('hidden')
+        indicator_main.classList.remove('hidden')
+
+
+
+        homebutton_black.classList.add('hidden')
+        homebutton.classList.remove('hidden')
+
+
+        pb_ns_black.classList.add('hidden')
+        profilebutton.classList.remove('hidden')
+
+
+
+        body.classList.remove('bg-202125')
+        body.classList.add('bg-white')
+
+
+        profile_lines.forEach(function(element){
+            element.style.backgroundColor='#303135'
+        })
+
+
+        settings_image.classList.remove('hidden')
+        settings_image_black.classList.add('hidden')
+
+
+
+
+
+
+
+
+
+
     }
+
+
+
+
+    pb_ns_black.addEventListener('click',(e)=>{
+        e.preventDefault();
+        document.getElementById('userselected').classList.remove('hidden')
+        hideElements();
+        userselected.classList.remove('hidden');
+        profilebutton.classList.add('hidden');
+
+
+        //white mode 
+        userselected.classList.add('hidden')
+        pb_black.classList.remove('hidden')
+        pb_ns_black.classList.add('hidden')
+
+
+        homebutton_black.classList.add('hidden')
+        homebutton_ns_black.classList.remove('hidden')
+        
+    
+        document.getElementById("homebutton_ns").classList.remove('hidden')
+        hb_ns.classList.add('hidden')
+        homebutton.classList.add('hidden')
+    
+        hb_ns.style.opacity = '0.75';
+        hb_span.style.opacity='0.75';
+        hb_span.style.fontWeight='300';
+        pb_span.style.opacity='1'
+        pb_span.style.fontWeight='500'
+    
+        indicator_id.style.left= '2.4px'
+    
+    
+        home_content.classList.add('hidden')
+        home_content.classList.toggle('opacity-0')
+    
+    
+    
+    
+        if(profile_content.classList.contains('hidden')){
+            profile_content.classList.toggle('hidden');
+    
+            setTimeout(()=>{
+                profile_content.style.opacity='1'
+                home_content.style.opacity='0'
+            },1)
+        }
+
+
+        indicator_main_black.style.left= '2.4px'
+    })
+
+
+
+    homebutton_ns_black.addEventListener('click', ()=>{
+        showElements();
+        userselected.classList.add('hidden')
+        profilebutton.classList.remove('hidden')
+        document.getElementById("homebutton_ns").classList.add('hidden')
+        homebutton.classList.remove('hidden')
+        hb_span.style.opacity='1'
+        hb_span.style.fontWeight='500'
+        pb_span.style.opacity='0.75'
+        pb_span.style.fontWeight='300'
+        indicator_main_black.style.left= '0.5px'
+
+
+
+        //white mode
+        homebutton_ns_black.classList.add('hidden')
+        homebutton.classList.add('hidden')
+        homebutton_black.classList.remove('hidden')
+
+        profilebutton.classList.add('hidden')
+        pb_ns_black.classList.remove('hidden')
+        pb_black.classList.add('hidden')
+        
+    
+    
+        profile_content.classList.add('hidden')
+    
+    
+        if(home_content.classList.contains('hidden')){
+            home_content.classList.remove('hidden');
+    
+            setTimeout(()=>{
+                home_content.style.opacity = '1';
+                profile_content.style.opacity = '0';
+            },1)
+        }
+    });
+
+
+
+    indicator_main_black.addEventListener('click',()=>{
+        home_content.classList.add('hidden');
+        profile_content.classList.add('hidden')
+        navbar.classList.add('hidden')
+        indicator_content.classList.remove('hidden')
+        // indicator_content.classList.add('animate-sildeInFromBottom')
+    })
+    
+    indicator_back.addEventListener('click',()=>{
+        location.reload();
+    })
+
+
+
+
+    
 }
 
 checkbox.addEventListener('change', changeContent)
