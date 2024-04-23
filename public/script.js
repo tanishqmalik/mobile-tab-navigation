@@ -58,7 +58,19 @@ const settings_image_black = document.getElementById('settings_image1')
 
 
 const profile_r = document.querySelectorAll('#profile_r');
+const profile_r_black = document.querySelectorAll('#profile_r1')
 
+
+const thunderbolt = document.getElementById('thunderbolt_white')
+const vlogs= document.getElementById('vlogs_white')
+const likes = document.getElementById('likes_white')
+const trash= document.getElementById('trash_white')
+
+
+const thunderbolt_black = document.getElementById('thunderbolt_black')
+const vlogs_black= document.getElementById('vlogs_black')
+const likes_black = document.getElementById('likes_black')
+const trash_black= document.getElementById('trash_black')
 
 // clapperboard_white.forEach(function(element){
 //     element.classList.add('hidden')
@@ -342,9 +354,29 @@ function changeContent(){
         settings_image_black.classList.remove('hidden')
 
 
-        // profile_r.forEach(function(element){
-        //     element.
-        // })
+        profile_r_black.forEach(function(element){
+            element.classList.remove('hidden')
+        })
+        profile_r.forEach(function(element){
+            element.classList.add('hidden')
+        })
+
+        thunderbolt_black.classList.remove('hidden')
+        thunderbolt.classList.add('hidden')
+
+        vlogs_white.classList.add('hidden')
+        vlogs_black.classList.remove('hidden')
+
+        likes.classList.add('hidden')
+        likes_black.classList.remove('hidden')
+
+        trash.classList.add('hidden')
+        trash_black.classList.remove('hidden')
+
+
+
+        // profile_r.style.fill='black'
+        // console.log(profile_r)
         
         
         // console.log(container)
@@ -433,11 +465,24 @@ function changeContent(){
 
 
 
+        profile_r_black.forEach(function(element){
+            element.classList.add('hidden')
+        })
+        profile_r.forEach(function(element){
+            element.classList.remove('hidden')
+        })
 
+        thunderbolt_black.classList.add('hidden')
+        thunderbolt.classList.remove('hidden')
 
+        vlogs_white.classList.remove('hidden')
+        vlogs_black.classList.add('hidden')
 
+        likes.classList.remove('hidden')
+        likes_black.classList.add('hidden')
 
-
+        trash.classList.remove('hidden')
+        trash_black.classList.add('hidden')
 
 
     }
