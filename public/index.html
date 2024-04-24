@@ -29,72 +29,92 @@
             <div id="indicator_content" class="hidden pt-4 m-[20px] animate-slideInFromBottom">
                 <div class="flex flex-row items-center justify-between relative">
                     <img id="indicator_back" class="w-8 cursor-pointer" src="assets/chevron_left_FILL0_wght400_GRAD0_opsz24.svg">
+                    <img id="indicator_left" class="w-8 cursor-pointer hidden" src="assets/indicator_left_black.svg">
                     <div class="flex items-center gap-1 absolute left-[153px]">
-                        <img class="cursor-pointer" src="assets/capture_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="capture_white" class="cursor-pointer" src="assets/capture_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="capture_black" class="cursor-pointer hidden" src="assets/capture1.svg">
                         <span class="text-white text-xs">Original</span>
                     </div>
-                    <img class="cursor-pointer relative bottom-0.5 " src="assets/ios_share_FILL0_wght400_GRAD0_opsz24.svg">
+                    <img id="ios_share_white" class="cursor-pointer relative bottom-0.5 " src="assets/ios_share_FILL0_wght400_GRAD0_opsz24.svg">
+                    <img id ="ios_share_black" class="cursor-pointer relative bottom-0.5 hidden " src="assets/ios_share_black.svg">
                 </div>
 
                 <div class="pt-2">
-                <div class="bg-white w-[380px] h-[300px] flex items-center justify-center flex-col">
+                <div class="bg-white w-[380px] h-[300px] flex items-center justify-center flex-col border-2 border-solid border-202125">
                     <img class="w-10 cursor-pointer" src="assets/add_photo_alternate_FILL0_wght400_GRAD0_opsz24.svg">
                     <span1 class="opacity-65">Click here to select items from files</span1>
                 </div>
                 </div>
 
 
-                <div class="bg-303135 mt-2 h-1 w-[418px] relative right-5"></div>
+                <div id="indicator_line0" class="bg-303135 mt-2 h-1 w-[416px] relative right-5"></div>
 
                 
 
                 <div class="text-white text-xs flex flex-row items-center pt-2 relative">
                     <span>0.00s <span class="opacity-75">/ 0.00s</span></span>
                     <div class="flex flex-row items-center absolute left-[147px] gap-3 cursor-pointer">
-                        <img class="w-[19px] opacity-75" src="assets/skip_previous_FILL1_wght400_GRAD0_opsz24.svg">
-                        <img src="assets/play_arrow_FILL1_wght400_GRAD0_opsz24.svg">
-                        <img class="w-[19px] opacity-75" src="assets/skip_next_FILL1_wght400_GRAD0_opsz24.svg">
+                        <img id="skip_previous" class="w-[19px] opacity-75" src="assets/skip_previous_FILL1_wght400_GRAD0_opsz24.svg">
+                        <img id="skip_previous_black" class="w-[19px] opacity-75 hidden" src="assets/skip_previous.svg">
+
+                        
+
+
+                        <img id="play" src="assets/play_arrow_FILL1_wght400_GRAD0_opsz24.svg">
+                        <img id="play_black" class="hidden" src="assets/play_black.svg">
+
+
+
+
+                        <img id="skip_next" class="w-[19px] opacity-75" src="assets/skip_next_FILL1_wght400_GRAD0_opsz24.svg">
+                        <img id="skip_next_black" class="w-[19px] opacity-75 hidden" src="assets/skip_next_black.svg">
+
                     </div>
                 </div>
 
 
-                <div class="h-[263px] bg-white w-[2px] absolute bottom-[109px] left-[206px]"></div>
+                <div id="indicator_line" class="h-[263px] bg-white w-[2px] absolute bottom-[105px] left-[206px]"></div>
 
 
                 <div class="flex flex-col pt-5 relative gap-4">
                     <div class="flex flex-row items-center relative left-36">
-                        <img src="assets/music.svg">
-                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
+                        <img id="music_white" src="assets/music.svg">
+                        <img id="music_black" class="hidden" src="assets/music_black.svg">
+                        <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add music</span>
                         </div>
                     </div>
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img src="assets/type.svg">
-                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
+                        <img id="type_white" src="assets/type.svg">
+                        <img id="type_black" class="hidden" src="assets/type_black.svg">
+                        <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add subtitle</span>
                         </div>
                     </div>
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img src="assets/sticker.svg">
-                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
+                        <img id="sticker_white" src="assets/sticker.svg">
+                        <img id="sticker_black" class="hidden" src="assets/sticker_black.svg">
+                        <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add sticker / PiP</span>
                         </div>
                     </div>
 
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img src="assets/film (1).svg">
-                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
+                        <img id="film_white" src="assets/film (1).svg">
+                        <img id="film_black" class="hidden" src="assets/film_black.svg">
+                        <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add media</span>
                         </div>
                     </div>
 
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img src="assets/volume-2.svg">
-                        <div class="bg-303135 h-10 w-[210px] relative flex items-center left-6">
+                        <img id="volume_white" src="assets/volume-2.svg">
+                        <img id="volume_black" class="hidden" src="assets/vloume_black.svg">
+                        <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2">Volume</span>
                         </div>
                     </div>
@@ -104,33 +124,42 @@
 
                 <div class="flex flex-row mt-9 gap-7 justify-evenly">
                     <div class="flex flex-col cursor-pointer">
-                        <img class="w-8 opacity-90" src="assets/filter_vintage_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="filter_white" class="w-8 opacity-90" src="assets/filter_vintage_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="filter_black" class="w-8 opacity-90 hidden" src="assets/filter_black.svg">
+
                         <span class="text-xs text-white opacity-75">Filter</span>
                     </div>
 
                     <div class="flex flex-col cursor-pointer">
-                        <img class="w-8 opacity-90" src="assets/content_cut_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="content_cut_white" class="w-8 opacity-90" src="assets/content_cut_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="content_cut_black" class="w-8 opacity-90 hidden" src="assets/content_cut_black.svg">
+
                         <span class="text-xs text-white opacity-75">Trim</span>
                     </div>
 
                     <div class="flex flex-col cursor-pointer">
-                        <img class="w-8 opacity-90" src="assets/star_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="star_white" class="w-8 opacity-90" src="assets/star_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="star_black" class="w-8 opacity-90 hidden" src="assets/star_black.svg">
+
                         <span class="text-xs text-white opacity-75">FX</span>
                     </div>
 
 
                     <div class="flex flex-col cursor-pointer">
-                        <img class="w-8 opacity-90" src="assets/crop_rotate_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="crop_white" class="w-8 opacity-90" src="assets/crop_rotate_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="crop_black" class="w-8 opacity-90 hidden" src="assets/crop_black.svg">
                         <span class="text-xs text-white opacity-75">Crop</span>
                     </div>
 
                     <div class="flex flex-col cursor-pointer">
-                        <img class="w-8 opacity-90" src="assets/lens_blur_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="lens_blur_white" class="w-8 opacity-90" src="assets/lens_blur_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="lens_blur_black" class="w-8 opacity-90 hidden" src="assets/lens_blur_black.svg">
                         <span class="text-xs text-white opacity-75">Blur</span>
                     </div>
 
                     <div class="flex flex-col cursor-pointer items-center">
-                        <img class="w-8 opacity-90" src="assets/zoom_out_map_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="zoom_white" class="w-8 opacity-90" src="assets/zoom_out_map_FILL0_wght400_GRAD0_opsz24.svg">
+                        <img id="zoom_black" class="w-8 opacity-90 hidden" src="assets/zoom_black.svg">
                         <span class="text-xs text-white opacity-75">Zoom</span>
                     </div>
 

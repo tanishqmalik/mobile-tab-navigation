@@ -598,8 +598,8 @@ video {
   bottom: 1.5rem;
 }
 
-.bottom-\[109px\] {
-  bottom: 109px;
+.bottom-\[110px\] {
+  bottom: 110px;
 }
 
 .bottom-\[20px\] {
@@ -668,6 +668,22 @@ video {
 
 .top-\[2px\] {
   top: 2px;
+}
+
+.bottom-\[115px\] {
+  bottom: 115px;
+}
+
+.bottom-\[100px\] {
+  bottom: 100px;
+}
+
+.bottom-\[103px\] {
+  bottom: 103px;
+}
+
+.bottom-\[105px\] {
+  bottom: 105px;
 }
 
 .m-\[15px\] {
@@ -900,6 +916,22 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[209px\] {
+  width: 209px;
+}
+
+.w-\[204px\] {
+  width: 204px;
+}
+
+.w-\[208px\] {
+  width: 208px;
+}
+
+.w-\[417px\] {
+  width: 417px;
 }
 
 @keyframes slideInFromBottom {

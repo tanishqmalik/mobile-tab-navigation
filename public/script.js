@@ -8,7 +8,6 @@ const pb_span=document.getElementById('profile_span');
 const indicator_id = document.getElementById('indicator_id');
 const navbar = document.getElementById('navbar');
 const indicator_content= document.getElementById('indicator_content')
-const indicator_back = document.getElementById('indicator_back')
 const indicator_helper = document.getElementById('indicator_helper');
 
 
@@ -72,6 +71,74 @@ const vlogs_black= document.getElementById('vlogs_black')
 const likes_black = document.getElementById('likes_black')
 const trash_black= document.getElementById('trash_black')
 
+
+
+//indicator content white mode
+
+
+const content_back = document.getElementById('indicator_back')
+const content_left_black = document.getElementById('indicator_left')
+
+const capture_white = document.getElementById('capture_white')
+const capture_black = document.getElementById('capture_black')
+
+const ios_share_white = document.getElementById('ios_share_white')
+const ios_share_black = document.getElementById('ios_share_black')
+
+
+const skip_previous = document.getElementById('skip_previous')
+const skip_previous_black = document.getElementById('skip_previous_black')
+
+
+const play_white = document.getElementById('play')
+const play_black = document.getElementById('play_black')
+
+const skip_next = document.getElementById('skip_next')
+const skip_next_black = document.getElementById('skip_next_black')
+
+
+const music_white = document.getElementById('music_white')
+const music_black = document.getElementById('music_black')
+
+const type_white = document.getElementById('type_white')
+const type_black = document.getElementById('type_black')
+
+
+const sticker_white = document.getElementById('sticker_white')
+const sticker_black = document.getElementById('sticker_black')
+
+const film_white = document.getElementById('film_white')
+const film_black = document.getElementById('film_black')
+
+
+const volume_white = document.getElementById('volume_white')
+const volume_black = document.getElementById('volume_black')
+
+
+const filter_white = document.getElementById('filter_white')
+const filter_black = document.getElementById('filter_black')
+
+const content_cut_white= document.getElementById('content_cut_white')
+const content_cut_black= document.getElementById('content_cut_black')
+
+const star_white = document.getElementById('star_white')
+const star_black = document.getElementById('star_black')
+
+const crop_white = document.getElementById('crop_white')
+const crop_black = document.getElementById('crop_black')
+
+const lens_blur_white = document.getElementById('lens_blur_white')
+const lens_blur_black = document.getElementById('lens_blur_black')
+
+const zoom_white = document.getElementById('zoom_white')
+const zoom_black = document.getElementById('zoom_black')
+
+
+const indicator_line= document.getElementById('indicator_line')
+
+
+const indicator_rect= document.querySelectorAll('#indicator_rect')
+const indicator_line0 = document.getElementById('indicator_line0')
 // clapperboard_white.forEach(function(element){
 //     element.classList.add('hidden')
 // })
@@ -220,6 +287,9 @@ indicator_id.addEventListener('click',()=>{
 
 indicator_back.addEventListener('click',()=>{
     location.reload();
+    // indicator_content.classList.add('hidden')
+    // home_content.classList.remove('hidden')
+    // navbar.classList.remove('hidden')
 })
 
 
@@ -373,6 +443,74 @@ function changeContent(){
         trash.classList.add('hidden')
         trash_black.classList.remove('hidden')
 
+        indicator_back.classList.add('hidden')
+        // indicator_left_white.classList.remove('hidden')
+
+
+        content_back.classList.add('hidden')
+        content_left_black.classList.remove('hidden')
+
+
+        capture_black.classList.remove('hidden')
+        capture_white.classList.add('hidden')
+
+        ios_share_black.classList.remove('hidden')
+        ios_share_white.classList.add('hidden')
+
+        play_black.classList.remove('hidden')
+        play_white.classList.add('hidden')
+
+        skip_next_black.classList.remove('hidden')
+        skip_next.classList.add('hidden')
+
+        skip_previous_black.classList.remove('hidden')
+        skip_previous.classList.add('hidden')
+
+        music_black.classList.remove('hidden')
+        music_white.classList.add('hidden') 
+
+        type_black.classList.remove('hidden')
+        type_white.classList.add('hidden')
+
+        sticker_black.classList.remove('hidden')
+        sticker_white.classList.add('hidden')
+
+        film_black.classList.remove('hidden')
+        film_white.classList.add('hidden')
+
+        volume_black.classList.remove('hidden')
+        volume_white.classList.add('hidden')
+
+        filter_black.classList.remove('hidden')
+        filter_white.classList.add('hidden')
+
+        content_cut_black.classList.remove('hidden')
+        content_cut_white.classList.add('hidden')
+
+        star_black.classList.remove('hidden')
+        star_white.classList.add('hidden')
+
+        crop_black.classList.remove('hidden')
+        crop_white.classList.add('hidden')
+
+        lens_blur_black.classList.remove('hidden')
+        lens_blur_white.classList.add('hidden')
+
+        zoom_black.classList.remove('hidden')
+        zoom_white.classList.add('hidden')
+
+        indicator_line.style.backgroundColor='black'
+
+        indicator_rect.forEach(function(element){
+            element.style.backgroundColor='#E7E7E7'
+        })
+
+        indicator_line0.style.backgroundColor='#E7E7E7'
+
+
+
+
+
 
 
         // profile_r.style.fill='black'
@@ -485,6 +623,74 @@ function changeContent(){
         trash_black.classList.add('hidden')
 
 
+        // indicator_left_white.classList.add('hidden')
+
+        content_back.classList.remove('hidden')
+        content_left_black.classList.add('hidden')
+
+
+        capture_black.classList.add('hidden')
+        capture_white.classList.remove('hidden')
+
+        ios_share_black.classList.add('hidden')
+        ios_share_white.classList.remove('hidden')
+
+
+        play_black.classList.add('hidden')
+        play_white.classList.remove('hidden')
+
+
+        skip_next_black.classList.add('hidden')
+        skip_next.classList.remove('hidden')
+
+        skip_previous_black.classList.add('hidden')
+        skip_previous.classList.remove('hidden')
+
+        music_black.classList.add('hidden')
+        music_white.classList.remove('hidden')
+
+        type_black.classList.add('hidden')
+        type_white.classList.remove('hidden')
+
+        sticker_black.classList.add('hidden')
+        sticker_white.classList.remove('hidden')
+
+        film_black.classList.add('hidden')
+        film_white.classList.remove('hidden')
+
+        volume_black.classList.add('hidden')
+        volume_white.classList.remove('hidden')
+
+        filter_black.classList.add('hidden')
+        filter_white.classList.remove('hidden')
+
+
+        content_cut_black.classList.add('hidden')
+        content_cut_white.classList.remove('hidden')
+
+        star_black.classList.add('hidden')
+        star_white.classList.remove('hidden')
+
+
+        crop_black.classList.add('hidden')
+        crop_white.classList.remove('hidden')
+
+        lens_blur_black.classList.add('hidden')
+        lens_blur_white.classList.remove('hidden')
+
+        zoom_black.classList.add('hidden')
+        zoom_white.classList.remove('hidden')
+
+
+        indicator_line.style.backgroundColor='white'
+        indicator_rect.forEach(function(element){
+            element.style.backgroundColor='#303135'
+        })
+        indicator_line0.style.backgroundColor='#303135'
+
+
+
+
     }
 
 
@@ -513,6 +719,7 @@ function changeContent(){
         homebutton.classList.add('hidden')
     
         hb_ns.style.opacity = '0.75';
+        homebutton_ns_black.style.opacity='0.75';
         hb_span.style.opacity='0.75';
         hb_span.style.fontWeight='300';
         pb_span.style.opacity='1'
@@ -590,9 +797,14 @@ function changeContent(){
         // indicator_content.classList.add('animate-sildeInFromBottom')
     })
     
-    indicator_back.addEventListener('click',()=>{
+    content_left_black.addEventListener('click',()=>{
         location.reload();
+        // indicator_content.classList.add('hidden')
+        // home_content.classList.remove('hidden')
+        // navbar.classList.remove('hidden')
     })
+
+    
 
 
 
