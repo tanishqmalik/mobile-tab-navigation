@@ -1,11 +1,12 @@
 overview- dark mode
-<img width="1533" alt="Screenshot 2024-04-25 at 5 46 47 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/85490122-f540-4885-8e81-98cbdfd3a5ed">
+<img width="1533" alt="Screenshot 2024-04-26 at 11 15 17 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/7554a33e-de62-48f3-89a3-964d078a4428">
+
 
 light mode
-<img width="1533" alt="Screenshot 2024-04-26 at 6 24 01 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/fd26766b-15d5-49e5-ad52-668a4b1e52a0">
+<img width="1533" alt="Screenshot 2024-04-26 at 11 15 24 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/f9e9d3f0-cd9e-4078-9a2e-bfbddc5a2e84">
 
 
-<img width="1533" alt="Screenshot 2024-04-26 at 6 24 44 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/32e0411c-3711-4bd0-9844-05b24e81972f">
+<img width="1533" alt="Screenshot 2024-04-26 at 11 15 32 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/34710d0d-2b9e-41a7-a1ab-e2039e70b8f9">
 
 
-<img width="1533" alt="Screenshot 2024-04-26 at 6 25 02 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/cda4c039-0b4c-4999-82f7-04a5a1375c19">
+<img width="1533" alt="Screenshot 2024-04-26 at 11 15 39 PM" src="https://github.com/tanishqmalik/mobile-tab-navigation/assets/122337260/58d8491d-ea42-418e-90f3-54233451672a">
