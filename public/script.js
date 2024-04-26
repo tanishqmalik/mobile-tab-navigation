@@ -46,7 +46,7 @@ const pb_ns_black = document.getElementById('user_ns_black')
 const pb_black = document.getElementById('userselected_black')
 
 
-const body = document.getElementById('bodyy')
+// const body = document.getElementById('bodyy')
 
 
 const profile_lines = document.querySelectorAll('#profile_line')
@@ -186,7 +186,10 @@ const container5 = document.getElementById('edit6');
 // container.appendChild(image);
 
 
-
+//label for light mode
+const label_light_mode_on = document.getElementById('label_light_mode_on');
+const dark_mode_on = document.getElementById('dark_mode_on');
+const light_mode_on = document.getElementById('light_mode_on')
 
 
 
@@ -410,8 +413,8 @@ function changeContent(){
         profilebutton.classList.add('hidden')
 
 
-        body.classList.add('bg-202125')
-        body.classList.remove('bg-white')
+        // body.classList.add('bg-202125')
+        // body.classList.remove('bg-white')
 
 
 
@@ -508,6 +511,16 @@ function changeContent(){
         indicator_line0.style.backgroundColor='#E7E7E7'
 
 
+        light_mode_on.classList.remove('hidden')
+        dark_mode_on.classList.add('hidden')
+
+
+
+        label_light_mode_on.style.backgroundColor='#E7E7E7'
+        // label_light_mode_on.classList.remove('bg-gray-600')
+        
+
+
 
 
 
@@ -589,8 +602,8 @@ function changeContent(){
 
 
 
-        body.classList.remove('bg-202125')
-        body.classList.add('bg-white')
+        // body.classList.remove('bg-202125')
+        // body.classList.add('bg-white')
 
 
         profile_lines.forEach(function(element){
@@ -687,6 +700,13 @@ function changeContent(){
             element.style.backgroundColor='#303135'
         })
         indicator_line0.style.backgroundColor='#303135'
+
+        light_mode_on.classList.add('hidden')
+        dark_mode_on.classList.remove('hidden')
+
+        // label_light_mode_on.classList.remove('bg-gray-100')
+        label_light_mode_on.style.backgroundColor='#303135'
+        // label_light_mode_on.classList.add('bg-gray-600')
 
 
 

@@ -4,7 +4,6 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "vite",
     "build-css": "npx tailwindcss -i ./src/input.css -o ./public/styles.css --watch"
   },
   "keywords": [],

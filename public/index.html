@@ -7,10 +7,12 @@
     <link href="styles.css" rel="stylesheet">
     <a  href="https://icons8.com/icon/zxB19VPoVLjK/user"></a>
 </head>
-<body id="bodyy" class="bg-white flex justify-center items-center h-screen w-screen">
+<body id="bodyy" class="bg-purple-200 flex justify-center items-center h-screen w-screen">
 
-    <div class="flex justify-center items-center"> 
-
+    <!-- <div class="blur-[17px]">
+        <span1 class="text-[230px] font-bold text-start pr-[400px] pb-[44px] text-gray-800 w-screen">Mobile<br>Tab<br>Navigation</span1>
+    </div> -->
+    <div class="flex justify-center items-center absolute"> 
         <div id="mobiletabnav" class="bg-202125 w-[420px] h-[836px] text-center rounded-3xl relative border-2 border-solid border-202125">
             <div id="notifiaction_bar" class="flex flex-row mr-[10px] ml-[10px] mt-[5px] justify-between">
                 <div>
@@ -78,24 +80,24 @@
 
                 <div class="flex flex-col pt-5 relative gap-4">
                     <div class="flex flex-row items-center relative left-36">
-                        <img id="music_white" src="assets/music.svg">
-                        <img id="music_black" class="hidden" src="assets/music_black.svg">
+                        <img class="cursor-pointer" id="music_white" src="assets/music.svg">
+                        <img  id="music_black" class="hidden cursor-pointer" src="assets/music_black.svg">
                         <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add music</span>
                         </div>
                     </div>
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img id="type_white" src="assets/type.svg">
-                        <img id="type_black" class="hidden" src="assets/type_black.svg">
+                        <img class="cursor-pointer" id="type_white" src="assets/type.svg">
+                        <img  id="type_black" class="hidden cursor-pointer" src="assets/type_black.svg">
                         <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add subtitle</span>
                         </div>
                     </div>
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img id="sticker_white" src="assets/sticker.svg">
-                        <img id="sticker_black" class="hidden" src="assets/sticker_black.svg">
+                        <img class="cursor-pointer" id="sticker_white" src="assets/sticker.svg">
+                        <img  id="sticker_black" class="hidden cursor-pointer" src="assets/sticker_black.svg">
                         <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add sticker / PiP</span>
                         </div>
@@ -103,8 +105,8 @@
 
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img id="film_white" src="assets/film (1).svg">
-                        <img id="film_black" class="hidden" src="assets/film_black.svg">
+                        <img class="cursor-pointer" id="film_white" src="assets/film (1).svg">
+                        <img  id="film_black" class="hidden cursor-pointer" src="assets/film_black.svg">
                         <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2" >Tap to add media</span>
                         </div>
@@ -112,8 +114,8 @@
 
 
                     <div class="flex flex-row items-center relative left-36">
-                        <img id="volume_white" src="assets/volume-2.svg">
-                        <img id="volume_black" class="hidden" src="assets/vloume_black.svg">
+                        <img class="cursor-pointer" id="volume_white" src="assets/volume-2.svg">
+                        <img  id="volume_black" class="hidden cursor-pointer" src="assets/vloume_black.svg">
                         <div id="indicator_rect" class="bg-303135 h-10 w-[208px] relative flex items-center left-6">
                             <span class="text-white text-xs text-center opacity-75 absolute left-2">Volume</span>
                         </div>
@@ -248,11 +250,18 @@
                 <div class="flex flex-row justify-between items-center">
                     <h1 class="text-left font-bold text-3xl text-white">Hi Tanishq !</h1>
                     <!-- <img class="w-[30px] h-[30px] cursor-pointer"src ="assets/settingsmain.svg"> -->
-                    <label for="check" class=" bg-gray-100 cursor-pointer relative
-                    w-10 h-5 rounded-full">
+                    <label id="label_light_mode_on" for="check" class="bg-303135 cursor-pointer relative
+                    w-[55px] h-[30px] rounded-full">
                         <input type="checkbox" id="check" class="sr-only peer">
-                        <span class="w-2/5 h-4/5 bg-rose-300 absolute rounded-full left-1 top-[2px] peer-checked:bg-rose-600 peer-checked:left-5
-                        transition-all duration-500"></span>
+                        <span class="w-2/5 h-9/5 bg-gray-900 absolute rounded-full left-1 top-[2px] peer-checked:bg-gray-300 peer-checked:left-7
+                        transition-all duration-500">
+                        <img id="dark_mode_on" class="w-[18px] absolute top-1 left-[0.9px]" src="assets/Moon (1).svg">
+                        <img id="light_mode_on" class="w-[18px] absolute top-1 hidden" src="assets/Sun (1).svg">
+
+                        
+
+                        </span>
+                        
                     </label>
                 </div>
                 <span class="text-left font-thin  text-white">let's create something new !</span>
