@@ -46,9 +46,6 @@ const pb_ns_black = document.getElementById('user_ns_black')
 const pb_black = document.getElementById('userselected_black')
 
 
-// const body = document.getElementById('bodyy')
-
-
 const profile_lines = document.querySelectorAll('#profile_line')
 
 
@@ -139,14 +136,10 @@ const indicator_line= document.getElementById('indicator_line')
 
 const indicator_rect= document.querySelectorAll('#indicator_rect')
 const indicator_line0 = document.getElementById('indicator_line0')
-// clapperboard_white.forEach(function(element){
-//     element.classList.add('hidden')
-// })
 
+const checkbox = document.getElementById('check');
+const mobiletabnav= document.getElementById('mobiletabnav')
 
-// const clapperboard_white = document.querySelectorAll('#clapperboard_white');
-// console.log(clapperboard_white);
-// console.log(clapperboard_black);
 
 const image = document.createElement('img');
 image.src = 'assets/ellipsis1.svg'; 
@@ -181,9 +174,6 @@ const container3 = document.getElementById('edit4');
 const container4 = document.getElementById('edit5');
 const container5 = document.getElementById('edit6');
 
-// clapper.src=
-
-// container.appendChild(image);
 
 
 //label for light mode
@@ -202,13 +192,26 @@ const showElements = ()=> {
 }
 
 
-homebutton.addEventListener('click', (e) => {
-    showElements();
-});
+const clapperboard_black_remove= ()=>{
+    main.forEach((Elements)=>Elements.classList.remove('hidden'))
+}
+
+
+const spans= document.querySelectorAll('span')
+const h1_tags = document.querySelectorAll('h1');
+
+const random_line = document.querySelector('#line')
+
+
+
 
 
 const profile_content=document.getElementById('profile_content')
 const home_content=document.getElementById('home_content')
+
+homebutton.addEventListener('click', (e) => {
+    showElements();
+});
 
 profilebutton.addEventListener('click',(e)=>{
     e.preventDefault();
@@ -274,9 +277,6 @@ hb_ns.addEventListener('click', ()=>{
             profile_content.style.opacity = '0';
         },1)
     }
-
-    // home_content.classList.remove('opacity-0')
-    // home_content.classList.add('opacity-1')
 });
 
 
@@ -285,69 +285,14 @@ indicator_id.addEventListener('click',()=>{
     profile_content.classList.add('hidden')
     navbar.classList.add('hidden')
     indicator_content.classList.remove('hidden')
-    // indicator_content.classList.add('animate-sildeInFromBottom')
+
 })
 
 indicator_back.addEventListener('click',()=>{
     location.reload();
-    // indicator_content.classList.add('hidden')
-    // home_content.classList.remove('hidden')
-    // navbar.classList.remove('hidden')
+
 })
 
-
-
-
-
-
-// const toggleButton = document.getElementById('toggleButton');
-// const content = document.getElementById('content');
-
-// toggleButton.addEventListener('click', (e) => {
-//   content.classList.remove('opacity-0');
-//   content.classList.add('opacity-100');
-//   console.log(content)
-// });
-
-
-
-
-
-// scrolling try
-
-const checkbox = document.getElementById('check');
-const mobiletabnav= document.getElementById('mobiletabnav')
-
-// const spans = ()=>{
-//     const spanss = document.getElementsByTagName('span')
-//     main.forEach((spanss)=spanss.style.color='black');
-//     console.log(spanss);
-// }
-
-
-
-// checkbox.addEventListener('click', ()=>{
-//     mobiletabnav.style.background='white'
-//     console.log(mobiletabnav);
-//     spans.style.color='black';
-//     console.log(spans)
-// })
-
-// const spans = Array.from(document.querySelectorAll('span'))
-
-
-
-
-
-const clapperboard_black_remove= ()=>{
-    main.forEach((Elements)=>Elements.classList.remove('hidden'))
-}
-
-
-const spans= document.querySelectorAll('span')
-const h1_tags = document.querySelectorAll('h1');
-
-const random_line = document.querySelector('#line')
 
 function changeContent(){
     if(checkbox.checked){
@@ -413,11 +358,6 @@ function changeContent(){
         profilebutton.classList.add('hidden')
 
 
-        // body.classList.add('bg-202125')
-        // body.classList.remove('bg-white')
-
-
-
         profile_lines.forEach(function(element){
             element.style.backgroundColor='#E7E7E7'
         })
@@ -447,7 +387,6 @@ function changeContent(){
         trash_black.classList.remove('hidden')
 
         indicator_back.classList.add('hidden')
-        // indicator_left_white.classList.remove('hidden')
 
 
         content_back.classList.add('hidden')
@@ -517,21 +456,6 @@ function changeContent(){
 
 
         label_light_mode_on.style.backgroundColor='#E7E7E7'
-        // label_light_mode_on.classList.remove('bg-gray-600')
-        
-
-
-
-
-
-
-
-        // profile_r.style.fill='black'
-        // console.log(profile_r)
-        
-        
-        // console.log(container)
-
 
     }
     else{
@@ -808,28 +732,18 @@ function changeContent(){
     });
 
 
-
     indicator_main_black.addEventListener('click',()=>{
         home_content.classList.add('hidden');
         profile_content.classList.add('hidden')
         navbar.classList.add('hidden')
         indicator_content.classList.remove('hidden')
-        // indicator_content.classList.add('animate-sildeInFromBottom')
     })
     
     content_left_black.addEventListener('click',()=>{
         location.reload();
-        // indicator_content.classList.add('hidden')
-        // home_content.classList.remove('hidden')
-        // navbar.classList.remove('hidden')
     })
-
-    
-
-
-
-
     
 }
 
 checkbox.addEventListener('change', changeContent)
+
